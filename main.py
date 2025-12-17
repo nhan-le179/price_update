@@ -466,22 +466,22 @@ def main():
         if uploaded_file is not None:
             if st.button("🚀 Update Prices", type="primary", width='stretch'):
                 with st.spinner("Extracting text from image..."):
-                    # extracted_text = extract_text_from_image(model, image)
-                    extracted_text = """ CHỊ TUYẾT (Ngày 01/12 - 06/12/2025)
+                    extracted_text = extract_text_from_image(model, image)
+#                     extracted_text = """ CHỊ TUYẾT (Ngày 01/12 - 06/12/2025)
 
-Ngày        TÊN HÀNG     SỐ LƯỢNG     ĐƠN GIÁ     THÀNH TIỀN
-01/12/2025  CÁ MÁU          436       25000     10900000
-02/12/2025  CÁ MÁU          274       25000      6850000
-03/12/2025  CÁ MÁU          257       25000      6425000
-04/12/2025  CÁ MÁU          306       25000      7650000
-05/12/2025  CÁ MÁU          177       25000      4425000
-06/12/2025  CÁ MÁU          250       25000      6250000
+# Ngày        TÊN HÀNG     SỐ LƯỢNG     ĐƠN GIÁ     THÀNH TIỀN
+# 01/12/2025  CÁ MÁU          436       25000     10900000
+# 02/12/2025  CÁ MÁU          274       25000      6850000
+# 03/12/2025  CÁ MÁU          257       25000      6425000
+# 04/12/2025  CÁ MÁU          306       25000      7650000
+# 05/12/2025  CÁ MÁU          177       25000      4425000
+# 06/12/2025  CÁ MÁU          250       25000      6250000
 
-            CỘNG CÁ MÁU   1700                  42500000
-02/12/2025  DÈ TƯƠI        1500       35000     52500000
+#             CỘNG CÁ MÁU   1700                  42500000
+# 02/12/2025  DÈ TƯƠI        1500       35000     52500000
 
-            CỘNG DÈ TƯƠI  1500                  52500000
-            TỔNG CỘNG     3200                  95000000"""
+#             CỘNG DÈ TƯƠI  1500                  52500000
+#             TỔNG CỘNG     3200                  95000000"""
                 # print(extracted_text)
                 if extracted_text:
                     customer, new_df, new_grand_total, old_grand_total = store_text_to_df(extracted_text ,ca_mau_price ,de_tuoi_price)
